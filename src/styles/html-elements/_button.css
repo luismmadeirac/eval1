@@ -1,0 +1,276 @@
+button {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.23px;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    border-radius: var(--radius-40, 40px);
+    padding: 7px 14px;
+    gap: 3px;
+    align-self: stretch;
+    margin: 0.7rem 0rem;
+}
+
+button[role='checkbox'] {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+}
+
+button[role='switch'] {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    align-self: auto;
+    flex-direction: initial;
+    justify-content: normal;
+}
+
+.btn-small {
+    padding: 0.25rem 0.5rem;
+    column-gap: 0.375rem;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+
+.btn-base {
+    padding: 0.25rem 0.75rem;
+    column-gap: 0.375rem;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+
+.btn-large {
+    padding: 0.625rem 1rem;
+    column-gap: 0.875rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+
+.btn-xlarge {
+    padding: 0.875rem 1.25rem;
+    column-gap: 0.375rem;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+
+.button {
+    --sourcing-trust-dss-button-color: rgb(255, 255, 255);
+    --sourcing-trust-dss-button-color-hover: var(--sourcing-trust-dss-button-color);
+    --sourcing-trust-dss-button-color-active: var(--sourcing-trust-dss-button-color-hover);
+    --sourcing-trust-dss-button-disabled-opacity: var(--sourcing-trust-dss-link-disabled-opacity, 0.42);
+    --sourcing-trust-dss-button-border-color: transparent;
+    --sourcing-trust-dss-button-border-radius: 980px;
+    --sourcing-trust-dss-button-margin-horizontal: 14px;
+    --sourcing-trust-dss-button-margin-vertical: 14px;
+    --sourcing-trust-dss-button-min-width-basis: 60px;
+    --sourcing-trust-dss-button-padding-horizontal: 16px;
+    --sourcing-trust-dss-button-padding-vertical: 9px;
+    --sourcing-trust-dss-button-border-width: 1px;
+    --sourcing-trust-dss-button-box-sizing: content-box;
+    --sourcing-trust-dss-button-width: auto;
+    --sourcing-trust-dss-button-display: inline-block;
+    font-size: 14px;
+    line-height: 1.2857742857;
+    font-weight: 400;
+    letter-spacing: -0.016em;
+    font-family: Geist, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
+    background: var(--sourcing-trust-dss-button-background);
+    color: var(--sourcing-trust-dss-button-color);
+    padding-block: calc(var(--sourcing-trust-dss-button-padding-vertical) - var(--sourcing-trust-dss-button-border-width));
+    padding-inline: calc(var(--sourcing-trust-dss-button-padding-horizontal) - var(--sourcing-trust-dss-button-border-width));
+    border-radius: var(--sourcing-trust-dss-button-border-radius);
+    border: var(--sourcing-trust-dss-button-border-width) solid var(--sourcing-trust-dss-button-border-color);
+    width: var(--sourcing-trust-dss-button-width);
+    min-width: calc(var(--sourcing-trust-dss-button-min-width-basis) - var(--sourcing-trust-dss-button-padding-horizontal) * 2);
+    cursor: pointer;
+    display: var(--sourcing-trust-dss-button-display);
+    box-sizing: var(--sourcing-trust-dss-button-box-sizing);
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    --sourcing-trust-dss-button-background: rgb(0, 113, 227);
+    --sourcing-trust-dss-button-background-hover: #0076df;
+    --sourcing-trust-dss-button-background-active: #006edb;
+}
+
+.button:hover {
+    background: var(--sourcing-trust-dss-button-background-hover, var(--sourcing-trust-dss-button-background));
+    color: var(--sourcing-trust-dss-button-color-hover, var(--sourcing-trust-dss-button-color));
+    text-decoration: none;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.button:focus-visible {
+    outline: 2px solid var(--sourcing-trust-dss-focus-color, #0071e3);
+    outline-offset: var(--sourcing-trust-dss-focus-offset-container, 3px);
+}
+
+.button:active {
+    background: var(--sourcing-trust-dss-button-background-active, var(--sourcing-trust-dss-button-background));
+    color: var(--sourcing-trust-dss-button-color-active, var(--sourcing-trust-dss-button-color));
+    outline: none;
+}
+
+.button:disabled {
+    pointer-events: none;
+    opacity: var(--sourcing-trust-dss-button-disabled-opacity);
+}
+
+.button-block {
+    --sourcing-trust-dss-button-box-sizing: border-box;
+    --sourcing-trust-dss-button-width: 100%;
+    --sourcing-trust-dss-button-display: block;
+    --sourcing-trust-dss-button-border-radius: 8px;
+    --sourcing-trust-dss-button-margin-horizontal: 9px;
+    --sourcing-trust-dss-button-margin-vertical: 9px;
+}
+
+.button-neutral {
+    --sourcing-trust-dss-button-background: rgb(29, 29, 31);
+    --sourcing-trust-dss-button-background-hover: #272729;
+    --sourcing-trust-dss-button-background-active: #18181a;
+    --sourcing-trust-dss-button-color: rgb(255, 255, 255);
+}
+
+.button-secondary {
+    --sourcing-trust-dss-button-background: transparent;
+    --sourcing-trust-dss-button-background-hover: #0076df;
+    --sourcing-trust-dss-button-background-active: #006edb;
+    --sourcing-trust-dss-button-color: rgb(0, 102, 204);
+    --sourcing-trust-dss-button-color-hover: rgb(255, 255, 255);
+    --sourcing-trust-dss-button-border-color: rgb(0, 102, 204);
+}
+
+.button-secondary-neutral {
+    --sourcing-trust-dss-button-background: transparent;
+    --sourcing-trust-dss-button-background-hover: #272729;
+    --sourcing-trust-dss-button-background-active: #18181a;
+    --sourcing-trust-dss-button-color: rgb(29, 29, 31);
+    --sourcing-trust-dss-button-color-hover: rgb(255, 255, 255);
+    --sourcing-trust-dss-button-border-color: rgb(29, 29, 31);
+}
+
+.button-cancel {
+    --sourcing-trust-dss-button-background: rgba(225, 29, 72, 1);
+    --sourcing-trust-dss-button-background-hover: rgba(190, 18, 60, 1);
+    --sourcing-trust-dss-button-background-active: rgba(159, 18, 57, 1);
+    --sourcing-trust-dss-button-color: rgba(255, 255, 255, 1);
+}
+
+.button-super {
+    --sourcing-trust-dss-button-padding-horizontal: 31px;
+    --sourcing-trust-dss-button-padding-vertical: 18px;
+    --sourcing-trust-dss-button-min-width-basis: 90px;
+    --sourcing-trust-dss-button-margin-horizontal: 22px;
+    --sourcing-trust-dss-button-margin-vertical: 22px;
+    font-size: 17px;
+    line-height: 1.1764805882;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: 'Geist', 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+.button-super.button-block {
+    --sourcing-trust-dss-button-border-radius: 12px;
+    --sourcing-trust-dss-button-margin-horizontal: 14px;
+    --sourcing-trust-dss-button-margin-vertical: 14px;
+}
+
+.button-elevated {
+    --sourcing-trust-dss-button-padding-horizontal: 22px;
+    --sourcing-trust-dss-button-padding-vertical: 12px;
+    --sourcing-trust-dss-button-min-width-basis: 70px;
+    --sourcing-trust-dss-button-margin-horizontal: 18px;
+    --sourcing-trust-dss-button-margin-vertical: 18px;
+    font-size: 17px;
+    line-height: 1.1764805882;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: 'Geist', 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+.button-elevated.button-block {
+    --sourcing-trust-dss-button-border-radius: 10px;
+    --sourcing-trust-dss-button-margin-horizontal: 11px;
+    --sourcing-trust-dss-button-margin-vertical: 11px;
+}
+
+.button-reduced {
+    --sourcing-trust-dss-button-padding-horizontal: 11px;
+    --sourcing-trust-dss-button-padding-vertical: 4px;
+    --sourcing-trust-dss-button-min-width-basis: 45px;
+    --sourcing-trust-dss-button-margin-horizontal: 10px;
+    --sourcing-trust-dss-button-margin-vertical: 10px;
+    font-size: 12px;
+    line-height: 1.3333733333;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    font-family: 'Geist', 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+.button-reduced.button-block {
+    --sourcing-trust-dss-button-border-radius: 5px;
+    --sourcing-trust-dss-button-margin-horizontal: 6px;
+    --sourcing-trust-dss-button-margin-vertical: 6px;
+}
+
+.button-margin {
+    margin-inline-end: var(--sourcing-trust-dss-button-margin-horizontal);
+    margin-bottom: var(--sourcing-trust-dss-button-margin-vertical);
+}
+
+.theme-dark .button {
+    --sourcing-trust-dss-button-disabled-opacity: var(--sourcing-trust-dss-link-disabled-opacity, 0.36);
+    --sourcing-trust-dss-button-background: rgb(0, 113, 227);
+    --sourcing-trust-dss-button-background-hover: #0077ed;
+    --sourcing-trust-dss-button-background-active: #006edb;
+}
+
+.theme-dark .button-neutral {
+    --sourcing-trust-dss-button-background: rgb(245, 245, 247);
+    --sourcing-trust-dss-button-background-hover: rgb(255, 255, 255);
+    --sourcing-trust-dss-button-background-active: #ededf2;
+    --sourcing-trust-dss-button-color: rgb(0, 0, 0);
+}
+
+.theme-dark .button-secondary {
+    --sourcing-trust-dss-button-background: transparent;
+    --sourcing-trust-dss-button-background-hover: #0077ed;
+    --sourcing-trust-dss-button-background-active: #006edb;
+    --sourcing-trust-dss-button-color: rgb(41, 151, 255);
+    --sourcing-trust-dss-button-color-hover: rgb(255, 255, 255);
+    --sourcing-trust-dss-button-border-color: rgb(41, 151, 255);
+}
+
+.theme-dark .button-secondary-neutral {
+    --sourcing-trust-dss-button-background: transparent;
+    --sourcing-trust-dss-button-background-hover: rgb(255, 255, 255);
+    --sourcing-trust-dss-button-background-active: #ededf2;
+    --sourcing-trust-dss-button-color: rgb(245, 245, 247);
+    --sourcing-trust-dss-button-color-hover: rgb(0, 0, 0);
+    --sourcing-trust-dss-button-border-color: rgb(245, 245, 247);
+}
+
+.theme-dark .button-cancel {
+    --sourcing-trust-dss-button-background: rgba(225, 29, 72, 1);
+    --sourcing-trust-dss-button-background-hover: rgba(190, 18, 60, 1);
+    --sourcing-trust-dss-button-background-active: rgba(159, 18, 57, 1);
+    --sourcing-trust-dss-button-color: rgba(255, 255, 255, 1);
+}
+
+.button-loading {
+    position: absolute;
+    align-items: center;
+    justify-items: center;
+}

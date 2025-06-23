@@ -1,0 +1,121 @@
+.container {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    max-width: 980px;
+}
+
+@media only screen and (min-width: 1920px) {
+    .container {
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        max-width: 980px;
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .container {
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        width: 692px;
+    }
+}
+
+@media only screen and (max-width: 926px) {
+    .container {
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        width: 87.5%;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .container {
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        width: 87.5%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        width: 87.5%;
+    }
+}
+
+.container-large {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1480px;
+}
+
+@media only screen and (min-width: 1441px) {
+    .container-large {
+        margin-left: auto;
+        margin-right: auto;
+        width: 1480px;
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .container-large {
+        margin-left: auto;
+        margin-right: auto;
+        width: 692px;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .container-large {
+        margin-left: auto;
+        margin-right: auto;
+        width: 87.5%;
+    }
+}
+
+.container-small {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    width: 580px;
+}
+
+@media only screen and (min-width: 1920px) {
+    .container-small {
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        width: 760px;
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .container-small {
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        width: 692px;
+    }
+}
+
+@media only screen and (max-width: 926px) {
+    .container-small {
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        width: 87.5%;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .container-small {
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        width: 87.5%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container-small {
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        width: 87.5%;
+    }
+}

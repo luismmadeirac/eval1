@@ -1,0 +1,27 @@
+.table-controls {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    gap: 20px;
+    margin: 20px 0px;
+}
+
+.table-controls select {
+    width: max-content;
+    margin: 0;
+}
+
+.table-controls button {
+    margin: 0;
+    width: max-content;
+}
+
+/* Need to move this out of here*/
+.user-modal-card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: baseline;
+    text-align: left;
+    justify-content: start;
+}

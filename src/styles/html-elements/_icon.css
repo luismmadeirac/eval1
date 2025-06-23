@@ -1,0 +1,209 @@
+:root {
+  --web-badge-background-color-icon: #d0021b;
+  --web-essentials-icon-normal: currentColor;
+  --web-essentials-icon-disabled: #aab7b8;
+  --web-essentials-icon-error: #d0021b;
+  --web-essentials-icon-inverted: #ffffff;
+  --web-essentials-icon-link: #007bff;
+  --web-essentials-icon-subtle: #6c757d;
+  --web-essentials-icon-success: #28a745;
+  --web-essentials-icon-warning: #ffc107;
+
+  /* --- Sizing - Small --- */
+  --web-essentials-icon-small-size: 12px;
+  --web-essentials-icon-small-line-height: 12px;
+  --web-essentials-icon-small-stroke: 1.5px;
+
+  /* --- Sizing - Normal --- */
+  --web-essentials-icon-normal-size: 16px;
+  --web-essentials-icon-normal-line-height: 16px;
+  --web-essentials-icon-normal-stroke: 1.5px;
+  /* Default stroke often matches small/medium */
+
+  /* --- Sizing - Medium --- */
+  --web-essentials-icon-medium-size: 20px;
+  --web-essentials-icon-medium-line-height: 20px;
+  --web-essentials-icon-medium-stroke: 1.6px;
+
+  /* --- Sizing - Big --- */
+  --web-essentials-icon-big-size: 24px;
+  --web-essentials-icon-big-line-height: 24px;
+  --web-essentials-icon-big-stroke: 1.8px;
+
+  /* --- Sizing - Large --- */
+  --web-essentials-icon-large-size: 32px;
+  --web-essentials-icon-large-line-height: 32px;
+  --web-essentials-icon-large-stroke: 2px;
+}
+
+/* --- Base Icon Styles --- */
+.icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  color: var(--web-essentials-icon-normal);
+  fill: none;
+  flex-shrink: 0;
+}
+
+.icon-flex-height {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon>svg {
+  pointer-events: none;
+  display: block;
+  stroke: currentColor;
+  width: 100%;
+  height: 100%;
+}
+
+/* --- Size Variants --- */
+.size-small {
+  width: var(--web-essentials-icon-small-size);
+  height: var(--web-essentials-icon-small-line-height);
+}
+
+.size-small>svg {
+  stroke-width: var(--web-essentials-icon-small-stroke);
+}
+
+.size-normal {
+  width: var(--web-essentials-icon-normal-size);
+  height: var(--web-essentials-icon-normal-line-height);
+}
+
+.size-normal>svg {
+  stroke-width: var(--web-essentials-icon-normal-stroke);
+}
+
+.size-medium {
+  width: var(--web-essentials-icon-medium-size);
+  height: var(--web-essentials-icon-medium-line-height);
+}
+
+.size-medium>svg {
+  stroke-width: var(--web-essentials-icon-medium-stroke);
+}
+
+.size-big {
+  width: var(--web-essentials-icon-big-size);
+  height: var(--web-essentials-icon-big-line-height);
+}
+
+.size-big>svg {
+  stroke-width: var(--web-essentials-icon-big-stroke);
+}
+
+.size-large {
+  width: var(--web-essentials-icon-large-size);
+  height: var(--web-essentials-icon-large-line-height);
+}
+
+.size-large>svg {
+  stroke-width: var(--web-essentials-icon-large-stroke);
+}
+
+/* Height matching line-height for contextual sizing */
+.size-small-mapped-height {
+  height: var(--web-essentials-icon-small-line-height);
+}
+
+.size-normal-mapped-height {
+  height: var(--web-essentials-icon-normal-line-height);
+}
+
+.size-medium-mapped-height {
+  height: var(--web-essentials-icon-medium-line-height);
+}
+
+.size-big-mapped-height {
+  height: var(--web-essentials-icon-big-line-height);
+}
+
+.size-large-mapped-height {
+  height: var(--web-essentials-icon-large-line-height);
+}
+
+
+/* --- Color Variants --- */
+.variant-normal {
+  color: var(--web-essentials-icon-normal);
+}
+
+.variant-disabled {
+  color: var(--web-essentials-icon-disabled);
+}
+
+.variant-error {
+  color: var(--web-essentials-icon-error);
+}
+
+/* Apply to SVG stroke directly for specificity if needed, especially for complex icons */
+.variant-error>svg {
+  stroke: var(--web-essentials-icon-error);
+}
+
+.variant-inverted {
+  color: var(--web-essentials-icon-inverted);
+}
+
+.variant-inverted>svg {
+  stroke: var(--web-essentials-icon-inverted);
+}
+
+.variant-link {
+  color: var(--web-essentials-icon-link);
+}
+
+.variant-link>svg {
+  stroke: var(--web-essentials-icon-link);
+}
+
+.variant-subtle {
+  color: var(--web-essentials-icon-subtle);
+}
+
+.variant-success {
+  color: var(--web-essentials-icon-success);
+}
+
+.variant-success>svg {
+  stroke: var(--web-essentials-icon-success);
+}
+
+.variant-warning {
+  color: var(--web-essentials-icon-warning);
+}
+
+.variant-warning>svg {
+  stroke: var(--web-essentials-icon-warning);
+}
+
+
+/* --- Badge --- */
+.badge::after {
+  content: '';
+  position: absolute;
+  inline-size: 6px;
+  block-size: 6px;
+  border-radius: 50%;
+  background-color: var(--web-badge-background-color-icon);
+  inset-block-start: 1px;
+  inset-inline-end: 1px;
+}
+
+.icon svg .filled {
+  fill: currentColor;
+  stroke: none;
+}
+
+.icon svg .no-stroke {
+  stroke: none;
+}
+
+.icon svg .stroke-linejoin-round {
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}

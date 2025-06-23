@@ -1,0 +1,49 @@
+
+#sg-header {
+    display: flex;
+    width: 100%;
+}
+
+.content {
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media only screen and (min-width: 834px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+#language-select {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#code-select {
+    width: max-content;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 734px){
+    #code-select {
+        width: 100%;
+    }
+}
+
+.no-margins {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.right-side {
+    display: flex;
+}
+
+@media only screen and (max-width: 734px) {
+    .right-side {
+        flex-direction: column;
+    }
+}

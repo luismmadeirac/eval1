@@ -1,0 +1,52 @@
+:root {
+  --sourcing-trust-dss-focus-color: #0071e3;
+  --sourcing-trust-dss-focus-color-alt: rgb(0, 0, 0);
+  --sourcing-trust-dss-focus-offset: 1px;
+  --sourcing-trust-dss-focus-offset-container: 3px --global-nav-collective-height: 44px;
+
+}
+
+:root {
+  --primary: #000;
+  --inverted: #FFF;
+
+  /* colors */
+  --sourcing-trust-dss-blue: #007AFF;
+  --sourcing-trust-dss-indigo: #5856D6;
+  --sourcing-trust-dss-purple: #AF52DE;
+  --sourcing-trust-dss-pink: #FF2D55;
+  --sourcing-trust-dss-brown: #A2845E;
+  --sourcing-trust-dss-cyan: #32ADE6;
+  --soucring-trust-dss-teal: #30B0C7;
+  --soucring-trust-dss-mint: #00C7BE;
+  --soucring-trust-dss-green: #34C759;
+  --soucring-trust-dss-yellow: #FFCC00;
+  --soucring-trust-dss-orange: #FF9500;
+  --soucring-trust-dss-red: #FF3B30;
+
+
+}
+
+:root .theme-dark {
+  --primary: #FFF;
+  --inverted: #000;
+
+  /* colors */
+  --sourcing-trust-dss-color-blue: #0A84FF;
+  --sourcing-trust-dss-color-indigo: #5E5CE6;
+  --sourcing-trust-dss-color-purple: #BF5AF2;
+  --sourcing-trust-dss-color-pink: #FF375F;
+  --sourcing-trust-dss-color-brown: #AC8E68;
+  --sourcing-trust-dss-color-cyan: #64D2FF;
+  --sourcing-trust-dss-color-teal: #40CBE0;
+  --sourcing-trust-dss-color-mint: #63E6E2;
+  --sourcing-trust-dss-color-green: #30D158;
+  --sourcing-trust-dss-color-yellow: #FFD60A;
+  --sourcing-trust-dss-color-orTextange: #FF9F0A;
+  --sourcing-trust-dss-color-red: #FF453A;
+}
+
+/* This is necessary for Chrome to apply dark mode to page-level scrollbars  */
+html:has(body.theme-dark) {
+  color-scheme: dark;
+}

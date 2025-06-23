@@ -1,0 +1,8 @@
+{
+    "navigation": "navigation",
+    "greeting": "Welcome",
+    "option.table": "Table",
+    "option.raw_output": "Raw Output",
+    "button.previous": "Previous",
+    "button.next": "Next"
+}
